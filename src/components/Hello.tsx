@@ -1,27 +1,20 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-export interface HelloProps
-{
-    message: string;
-    children: any;
-}
-
-interface HelloState
-{
-
-}
-
-export class Hello extends Component<HelloProps, HelloState>
-{
-    public render(): JSX.Element
-    {
-        return (
-            <div className="hello">
-                <h1>{this.props.message}</h1>
-                <div>
-                    {this.props.children}
-                </div>
-            </div>
-        );
+const Hello=(props: any)=>{
+    const [count, setCount] = useState(0);
+    const {message, children} = props;
+    const increase = () => {
+        setCount(count+1);
     }
+
+    return (
+        <div className="hello">
+            <h1>{message}</h1>
+            <div>
+                {children}
+            </div>
+        </div>
+    )
 }
+
+export default Hello;

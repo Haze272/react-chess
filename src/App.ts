@@ -1,19 +1,7 @@
-import React from "react";
-import { Main } from "./Main";
-import { createRoot } from "react-dom/client";
 
-export class App
-{
-    constructor()
-    {
-        this.render();
-    }
+import Main from "./Main";
+import {ReactDOM} from "react";
 
-    private render(): void
-    {
-        const root = createRoot(document.getElementById("app") || document.createElement("div"));
-        root.render(React.createElement(Main, { app: this }, null));
-    }
-}
-
-new App();
+const rootNode = document.getElementById("app");
+const root = ReactDOM.createRoot(rootNode);
+root.render(root)
