@@ -4,6 +4,7 @@
         "module": "esnext",
         "moduleResolution": "node",
         "target": "esnext",
+        "strict": true,
         "sourceMap": true,
         "esModuleInterop": true,
         "lib": ["dom", "es6"],

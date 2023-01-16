@@ -9,14 +9,7 @@ export const App: React.FC = () => {
 
     return (
         <div className={styles['App']}>
-            <p className={styles['App-Text']}>Hello, world!</p>
-            <button
-                type="button"
-                className={styles['App-Button']}
-                onClick={onIncrement}
-            >
-                {count}
-            </button>
+            <h1>Hello World Template!</h1>
         </div>
     );
 };

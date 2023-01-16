@@ -1,6 +1,6 @@
 {
-  "name": "react-templates",
-  "version": "0.0.1",
+  "name": "react-ts-template",
+  "version": "1.0.0",
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
@@ -10,8 +10,16 @@
     "lint:style": "stylelint src",
     "lint": "npm-run-all -p lint:es lint:style"
   },
-  "author": "Vladislav Veluga",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "typescript",
+    "webpack",
+    "scss",
+    "jest",
+    "template"
+  ],
+  "author": "Stepan Berkunov",
+  "license": "MIT",
   "dependencies": {
     "classnames": "2.3.1",
     "react": "18.2.0",
