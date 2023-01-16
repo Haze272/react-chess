@@ -1,6 +1,6 @@
 {
-  "name": "react-ts-template",
-  "version": "1.0.0",
+  "name": "react-chess",
+  "version": "0.0.1",
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "webpack",
     "scss",
     "jest",
+    "chess",
     "template"
   ],
   "author": "Stepan Berkunov",
