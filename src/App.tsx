@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-import styles from './App.scss';
+import styles from './App.module.scss';
+import {Header} from "./shared/Header";
+import {Game} from "./pages/Game";
 
 export const App: React.FC = () => {
     const [count, setCount] = React.useState<number>(0);
@@ -9,7 +11,10 @@ export const App: React.FC = () => {
 
     return (
         <div className={styles['App']}>
-            <h1>Hello World Template!</h1>
+            <Header></Header>
+            <main className={styles['App-main']}>
+                <Game></Game>
+            </main>
         </div>
     );
 };

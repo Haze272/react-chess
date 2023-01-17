@@ -1,0 +1,10 @@
+@import '/src/assets/variables.scss';
+
+.App {
+    height: 100vh;
+
+    &-main {
+        background-color: var(--red-background);
+        height: calc(100% - 80px);
+    }
+}
