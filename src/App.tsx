@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import styles from './App.module.scss';
 import {Header} from "./shared/Header";
-import {Game} from "./pages/Game";
+import {Game} from "./pages/game/Game";
 
 export const App: React.FC = () => {
     const [count, setCount] = React.useState<number>(0);

@@ -1,6 +1,21 @@
 @use '/src/assets/variables.scss';
 
 .App-Header {
-    height: 80px;
+    height: 64px;
     background-color: var(--red-main);
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &-link {
+
+        &-text {
+            font-size: 32px;
+            color: var(--red-text);
+            font-weight: 600;
+        }
+    }
 }
